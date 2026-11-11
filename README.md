@@ -26,6 +26,12 @@ magpie plugin add .
 
 使用 Magpie 插件运行时。独立运行源码或测试需 Node.js 20.18.1 及以上。当前发布验收基于 Windows、Magpie 0.1.3694；其他版本和平台未做完整矩阵测试。
 
+## 插件市场发现
+
+仓库带有 Magpie 官方发现机制要求的 **`magpie-plugin`** GitHub topic。Magpie 的 Plugins → Discover（发现）通过这个 topic 扫描独立插件：默认分支根目录的 `package.json` 声明 `main` Provider 入口，以及 `magpie.middleware` 请求中间件；`magpie.name` 和中英文 `magpie.summary` 提供卡片展示信息。
+
+官方发现目录按计划每小时第 7、37 分钟更新，客户端还有缓存，因此新发布或更新可能需要等待刷新。这是独立作者插件的发现渠道；社区审核推荐列表由 `magpie-community/plugins/registry.json` 单独维护。本插件通过 GitHub 安装，无需先发布到 npm。
+
 ## 两个核心功能
 
 ### 1. 自动重试与多账号接续

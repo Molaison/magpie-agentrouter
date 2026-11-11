@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.1.1 — 2026-11-11
+
+- 按 Magpie 原生插件清单补齐 `magpie.name` 和中英文 `magpie.summary`，用于插件卡片展示。
+- 仓库添加官方发现机制要求的 `magpie-plugin` GitHub topic。
+- 明确独立插件 Discover 发现渠道和社区审核推荐渠道的区别；安装方式与运行逻辑保持不变。
+
 ## 0.1.0 — 2026-11-11
 
 首次公开发布 **Magpie for AgentRouter**。

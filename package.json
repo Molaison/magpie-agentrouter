@@ -1,18 +1,51 @@
 {
   "name": "magpie-agentrouter",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Magpie for AgentRouter: automatic retry, native account failover, and gzip request compression.",
   "type": "module",
   "main": "./index.mjs",
   "license": "MIT",
   "author": "Molaison",
-  "repository": { "type": "git", "url": "https://github.com/Molaison/magpie-agentrouter.git" },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Molaison/magpie-agentrouter.git"
+  },
   "homepage": "https://github.com/Molaison/magpie-agentrouter#readme",
-  "bugs": { "url": "https://github.com/Molaison/magpie-agentrouter/issues" },
-  "keywords": ["magpie", "agentrouter", "retry", "gzip", "compression", "codex"],
-  "engines": { "node": ">=20.18.1" },
-  "magpie": { "middleware": "./agentrouter/preserve.middleware.js" },
-  "files": ["index.mjs", "src/", "agentrouter/", "README.md", "CHANGELOG.md", "LICENSE"],
-  "scripts": { "test": "node --test test/*.test.mjs" },
-  "dependencies": { "undici": "7.30.2" }
+  "bugs": {
+    "url": "https://github.com/Molaison/magpie-agentrouter/issues"
+  },
+  "keywords": [
+    "magpie-plugin",
+    "magpie",
+    "agentrouter",
+    "retry",
+    "gzip",
+    "compression",
+    "codex"
+  ],
+  "engines": {
+    "node": ">=20.18.1"
+  },
+  "magpie": {
+    "name": "Magpie for AgentRouter",
+    "summary": {
+      "en": "AgentRouter provider with automatic retry, native account failover, and gzip compression for large Responses requests.",
+      "zh": "AgentRouter 自动重试与多账号接续；大体积 Responses 请求自动 gzip 压缩，减少上传开销。"
+    },
+    "middleware": "./agentrouter/preserve.middleware.js"
+  },
+  "files": [
+    "index.mjs",
+    "src/",
+    "agentrouter/",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test test/*.test.mjs"
+  },
+  "dependencies": {
+    "undici": "7.30.2"
+  }
 }
